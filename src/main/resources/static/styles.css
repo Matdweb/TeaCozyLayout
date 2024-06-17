@@ -1,0 +1,299 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 15 jun 2024, 13:32:20
+    Author     : Lenovo
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+}
+
+section {
+    height: 100vh;
+}
+
+header {
+    top: 0;
+    left: 0;
+    height: 69px;
+    width: 100%;
+    position: fixed;
+}
+
+header nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid seashell;
+    background-color: black;
+}
+
+nav img {
+    margin-left: 10px;
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+    font-weight: bold;
+    color: seashell;
+    list-style: none;
+}
+
+nav ul li a {
+    color: seashell;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav ul li:not(:last-of-type) a {
+    margin-right: 20px;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
+}
+
+main section.mission-container {
+    width: 1200px;
+    display: flex;
+    margin: 70px auto 0px;
+    height: 700px;
+    background-image: url(images/mission-background.jpg);
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+section.mission-container div {
+    background-color: black;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.teas-container {
+    width: 1000px;
+    margin: 30px auto;
+    margin-top: 60px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+section.teas-container .title-teas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.teas-container .title-teas h4{
+    margin-top: 15px;
+}
+
+section.teas-container .tea-images-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.tea-images-container .tea-img {
+    width: 300px;
+    height: 350px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    transition: all 1s;
+}
+
+.tea-images-container .tea-img h3 {
+    margin-top: 15px;
+}
+
+.tea-images-container .tea-img img {
+    width: 300px;
+    height: 200px;
+}
+.tea-images-container .tea-img:hover img{
+    transform: scale(1.05);
+}
+
+#tea_of_month {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+section.locations {
+    width: 1200px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    background-image: url(./img/locations-background.jpg);
+    margin: 30px auto 0px;
+}
+
+section.locations h2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+section.locations .locations-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+section.locations .locations-container .location-box{
+    width: 300px;
+    padding: 20px 0;
+    margin: 0 20px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+section.locations .locations-container .location-box h4{
+    margin: 15px;
+    font-weight: normal;
+    color: #aaaa;
+}
+
+section.about-us {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+section.events {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+section.events div{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.events p{
+    width: 50%;
+}
+
+section.contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 30px 0;
+    margin-top: 60px;
+}
+
+section.contact-form form{
+    display: flex;
+    width: 100%;
+    padding: 30px 50px;
+    background-color: seashell;
+    color: black;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+section.contact-form form input{
+    border-radius: 20px;
+    padding: 10px;
+}
+
+section.contact-form form button{
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    color: #aaaa;
+    padding-bottom: 40px;
+}
+
+footer article.copyright {
+    width: 100%;
+    text-align: left;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+footer article.copyright p{
+    margin-left: 20px;
+}
+
+footer article.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+footer article.footer h2, article.footer h5, article.footer p{
+    margin: 20px 0;
+}
+
+footer p {
+    font-weight: 700;
+}
